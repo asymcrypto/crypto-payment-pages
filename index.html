@@ -1,33 +1,119 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Crypto Payment Pages</title>
+    <title>Crypto Payment Pages - Professional Payment Solutions</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
-        body { font-family: Arial; max-width: 800px; margin: auto; padding: 20px; text-align: center; }
-        .example { margin: 20px 0; padding: 20px; border: 1px solid #ddd; border-radius: 10px; }
-        a { display: block; background: #3b82f6; color: white; padding: 15px; margin: 10px 0; border-radius: 8px; text-decoration: none; }
+        .card-3d {
+            transform: perspective(1000px) rotateY(0deg) rotateX(0deg);
+            transition: all 0.5s ease;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+        .card-3d:hover {
+            transform: perspective(1000px) rotateY(5deg) rotateX(5deg) translateY(-10px);
+            box-shadow: 0 35px 60px -12px rgba(0, 0, 0, 0.4);
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .pulse-glow {
+            animation: pulse-glow 2s infinite;
+        }
+        @keyframes pulse-glow {
+            0%, 100% { box-shadow: 0 0 20px rgba(59, 130, 246, 0.5); }
+            50% { box-shadow: 0 0 30px rgba(59, 130, 246, 0.8); }
+        }
     </style>
 </head>
-<body>
-    <h1>🚀 Crypto Payment Pages</h1>
-    <p>Professional payment pages built in 24 hours</p>
-    
-    <div class="example">
-        <h3>💰 Crypto Consultant</h3>
-        <a href="crypto-consultant-payment.html">View Example</a>
+<body class="gradient-bg min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+        <!-- Header -->
+        <div class="text-center mb-12">
+            <div class="pulse-glow inline-block p-4 rounded-full bg-white/10 backdrop-blur-sm mb-4">
+                <i class="fas fa-rocket text-4xl text-white"></i>
+            </div>
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">
+                Accept Crypto Payments
+            </h1>
+            <p class="text-xl text-white/80 mb-6">
+                Beautiful, professional payment pages that convert
+            </p>
+            <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 inline-block">
+                <p class="text-white text-2xl font-bold">$99 • Done in 24 hours</p>
+            </div>
+        </div>
+
+        <!-- Examples Grid -->
+        <div class="grid md:grid-cols-3 gap-8 mb-12">
+            <!-- Consultant Card -->
+            <div class="card-3d bg-white rounded-2xl p-6 border border-white/20">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-chart-line text-2xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Crypto Consultant</h3>
+                    <p class="text-gray-600 mb-4">Professional payment pages for consulting services</p>
+                    <a href="crypto-consultant-payment.html" 
+                       class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 block text-center">
+                        View Example
+                    </a>
+                </div>
+            </div>
+
+            <!-- NFT Artist Card -->
+            <div class="card-3d bg-white rounded-2xl p-6 border border-white/20">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-orange-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-palette text-2xl text-orange-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">NFT Artist</h3>
+                    <p class="text-gray-600 mb-4">Stunning pages for art commissions & collections</p>
+                    <a href="nft-artist-commission.html" 
+                       class="bg-orange-600 hover:bg-orange-700 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 block text-center">
+                        View Example
+                    </a>
+                </div>
+            </div>
+
+            <!-- DeFi Project Card -->
+            <div class="card-3d bg-white rounded-2xl p-6 border border-white/20">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-coins text-2xl text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">DeFi Project</h3>
+                    <p class="text-gray-600 mb-4">Launch pages for whitelists & token sales</p>
+                    <a href="defi-project-whitelist.html" 
+                       class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 block text-center">
+                        View Example
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Features -->
+        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 text-center">
+            <h2 class="text-3xl font-bold text-white mb-6">Why Choose Our Payment Pages?</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="text-white">
+                    <i class="fas fa-bolt text-2xl mb-3"></i>
+                    <h3 class="font-bold mb-2">Lightning Fast</h3>
+                    <p class="text-white/80">Built and delivered in 24 hours</p>
+                </div>
+                <div class="text-white">
+                    <i class="fas fa-mobile-alt text-2xl mb-3"></i>
+                    <h3 class="font-bold mb-2">Mobile Perfect</h3>
+                    <p class="text-white/80">Flawless on all devices</p>
+                </div>
+                <div class="text-white">
+                    <i class="fas fa-shield-alt text-2xl mb-3"></i>
+                    <h3 class="font-bold mb-2">Zero Risk</h3>
+                    <p class="text-white/80">Pay only when you're happy</p>
+                </div>
+            </div>
+        </div>
     </div>
-    
-    <div class="example">
-        <h3>🎨 NFT Artist</h3>
-        <a href="nft-artist-commission.html">View Example</a>
-    </div>
-    
-    <div class="example">
-        <h3>🔗 DeFi Project</h3>
-        <a href="defi-project-whitelist.html">View Example</a>
-    </div>
-    
-    <p><strong>$99 - Done in 24 hours</strong></p>
 </body>
 </html>
