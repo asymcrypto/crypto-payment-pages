@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pay CryptoConsultant.pro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { 
+            font-family: 'Arial', sans-serif; 
+            max-width: 500px; 
+            margin: auto; 
+            text-align: center;
+            padding: 20px;
+            background: #f8fafc;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .address { 
+            background: #f1f5f9; 
+            padding: 15px; 
+            border-radius: 10px; 
+            word-break: break-all;
+            margin: 20px 0;
+            font-size: 14px;
+        }
+        button {
+            background: #3b82f6;
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            margin: 10px 0;
+        }
+        .network { color: #64748b; font-size: 14px; }
+        .back-link { display: block; margin: 20px 0; color: #3b82f6; }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-link">← Back to Portfolio</a>
+    
+    <div class="container">
+        <h2>🔄 CryptoConsultant.pro</h2>
+        <p>Payment for 1-hour strategy session</p>
+        
+        <div class="address" id="address">0x71C7656EC7ab88b098defB751B7401B5f6d8976F</div>
+        <button onclick="copyAddress()">Copy Wallet Address</button>
+        
+        <div id="qrcode" style="margin: 25px 0;"></div>
+        
+        <p><strong>Amount:</strong> 0.1 ETH</p>
+        <p class="network">Network: Ethereum Mainnet</p>
+        <p style="color: #ef4444; font-size: 12px;">Double-check the address before sending</p>
+    </div>
+
+    <script>
+        function copyAddress() {
+            navigator.clipboard.writeText("0x71C7656EC7ab88b098defB751B7401B5f6d8976F");
+            alert("✅ Address copied to clipboard!");
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/davidshimjs/qrcodejs/qrcode.min.js"></script>
+    <script>
+        new QRCode(document.getElementById("qrcode"), "0x71C7656EC7ab88b098defB751B7401B5f6d8976F");
+    </script>
+</body>
+</html>
